@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Interactive Quiz | Ahmad Najmi Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h2>Ahmad Najmi</h2>
+<span>Web Developer | IoT Student</span>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="profile.html">Profile</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li><a href="game.html" class="active">Interactive</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- QUIZ SECTION -->
+
+<section class="quiz-layout">
+
+<div class="quiz-box">
+
+<h2>🎮 Interactive Quiz</h2>
+
+<p>
+Test your knowledge with 5 random questions.
+</p>
+
+<br>
+
+<button class="btn" onclick="startQuiz()">
+Start Quiz
+</button>
+
+<br><br>
+
+<h3 id="question">
+Click "Start Quiz" to begin.
+</h3>
+
+<br>
+
+<div id="answers">
+
+</div>
+
+<div id="result">
+
+</div>
+
+</div>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar-info">
+
+<h2>Quiz Information</h2>
+
+<div class="info-box">
+
+<h3>Total Questions</h3>
+
+<p>15 Questions</p>
+
+</div>
+
+<div class="info-box">
+
+<h3>Random Questions</h3>
+
+<p>5 Questions</p>
+
+</div>
+
+<div class="info-box">
+
+<h3>Best Score</h3>
+
+<h2 id="bestScore">0</h2>
+
+</div>
+
+<div class="info-box">
+
+<h3>Current Time</h3>
+
+<h2 id="clock">
+00:00:00
+</h2>
+
+</div>
+
+<div class="info-box">
+
+<h3>Total Visitors</h3>
+
+<h2 id="visitorCount">
+0
+</h2>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MUSIC -->
+
+<section class="card" style="text-align:center;">
+
+<h2>🎵 Background Music</h2>
+
+<p>
+Click the button below to Play or Pause music.
+</p>
+
+<br>
+
+<button class="btn" onclick="toggleMusic()">
+
+Play / Pause Music
+
+</button>
+
+</section>
+
+<audio id="bgMusic" loop>
+
+<source src="audio/music.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="correctSound">
+
+<source src="audio/correct.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="wrongSound">
+
+<source src="audio/wrong.mp3" type="audio/mpeg">
+
+</audio>
+
+<!-- FEATURES -->
+
+<section class="stats">
+
+<div class="card">
+
+<h2>🏆</h2>
+
+<p>
+Highest Score Saved Automatically
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎲</h2>
+
+<p>
+Random Questions Every Game
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>💾</h2>
+
+<p>
+LocalStorage Best Score
+</p>
+
+</div>
+
+</section>
+
+<!-- BUTTON -->
+
+<section class="card" style="text-align:center;">
+
+<button class="btn" onclick="toggleDarkMode()">
+
+🌙 Dark Mode
+
+</button>
+
+<button class="btn btn-dark" onclick="topFunction()">
+
+↑ Back To Top
+
+</button>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Ahmad Najmi Bin Salihan
+
+</p>
+
+<p>
+
+DFI20433 Web Development
+
+</p>
+
+<p>
+
+Semester 2A
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
