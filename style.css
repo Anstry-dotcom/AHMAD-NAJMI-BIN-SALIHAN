@@ -548,3 +548,41 @@ nav ul li{
 }
 
 }
+/* Radio Button */
+
+.radio-group{
+    display:flex;
+    gap:30px;
+    margin:10px 0 20px;
+}
+
+.radio-group label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.radio-group input[type="radio"]{
+    width:18px;
+    height:18px;
+}
+
+/* Checkbox */
+
+.checkbox-options{
+    margin:20px 0;
+}
+
+.checkbox-options label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+}
+
+.checkbox-options input[type="checkbox"]{
+    width:18px;
+    height:18px;
+}

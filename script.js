@@ -427,3 +427,40 @@ function topFunction() {
     });
 
 }
+document
+.getElementById("contactForm")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+emailjs.send(
+
+"service_q74n4ej",
+
+"template_esgz70u",
+
+{
+
+fullname: document.getElementById("fullname").value,
+
+email: document.getElementById("email").value,
+
+message: document.getElementById("message").value
+
+}
+
+).then(function(){
+
+alert("Email sent successfully!");
+
+document.getElementById("contactForm").reset();
+
+}).catch(function(error){
+
+alert("Failed to send email");
+
+console.log(error);
+
+});
+
+});
